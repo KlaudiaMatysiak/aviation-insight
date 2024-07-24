@@ -1,0 +1,32 @@
+.av-title {
+    color: #25e0e9;
+    border-top:#25e0e9 1px solid;
+}
+
+.av-img {
+    transform: rotateY(180deg);
+    margin-right:0;
+    margin-left: auto;
+    display:block;
+}
+
+.av-header {
+    font-family: "Montserrat", sans-serif;
+    position: absolute;
+    z-index: 100;
+    top: 45%;
+    left: 10%;
+}
+
+@media screen and (max-width: 1400px) {
+    .av-header {
+        top: 60%;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .av-header {
+        font-size: 1.5rem !important;
+        line-height: 1 !important;
+    }
+}
