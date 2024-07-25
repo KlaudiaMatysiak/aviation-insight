@@ -11,11 +11,11 @@
 }
 
 .av-header {
-    font-family: "Montserrat", sans-serif;
     position: absolute;
     z-index: 100;
     top: 45%;
     left: 10%;
+    user-select: none;
 }
 
 @media screen and (max-width: 1400px) {
@@ -29,4 +29,19 @@
         font-size: 1.5rem !important;
         line-height: 1 !important;
     }
+}
+
+.floating-button {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transform: translate(-50%, -50%);
+  &:focus {
+    outline: none;
+  }
 }
