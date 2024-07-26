@@ -1,6 +1,6 @@
 .av-title {
-    color: #25e0e9;
-    border-top:#25e0e9 1px solid;
+    color: var(--light-blue);
+    border-top:var(--light-blue) 1px solid;
 }
 
 .av-img {
@@ -31,17 +31,8 @@
     }
 }
 
-.floating-button {
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  cursor: pointer;
-  transform: translate(-50%, -50%);
-  &:focus {
-    outline: none;
-  }
+input[type=checkbox]:checked.filter + label {
+    color: var(--bs-btn-hover-color);
+    background-color: var(--light-blue);
+    border-color: var(--light-blue);
 }

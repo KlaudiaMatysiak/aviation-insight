@@ -5,7 +5,7 @@ export interface Data {
 
 export interface Document {
   alertedDate: Date;
-  date: Date | null;
+  date: string | null;
   documentId: string;
   feedback: any[];
   feedbackState: FeedbackState;
