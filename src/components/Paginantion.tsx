@@ -1,5 +1,4 @@
-import { Dispatch, SetStateAction, useEffect, useMemo, useState } from "react";
-import { Document } from "../aviation-types";
+import { Dispatch, SetStateAction, useMemo } from "react";
 
 function getPageList(totalPages: number, page: number, maxLength: number) {
   if (maxLength < 5) return [];
